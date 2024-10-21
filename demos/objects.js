@@ -31,6 +31,6 @@ function createPerson() {
   return person;
 }
 
-//catch the return valule in a variable
+//catch the return valule
 let spouse = createPerson();
 console.log(spouse);
