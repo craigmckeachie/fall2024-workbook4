@@ -6,3 +6,8 @@ let students = ["Gurgot", "Melina", "Kameron", "Timothy", "Christopher"]; //arra
 for (let index = 0; index < 5; index = index + 1) {
   console.log(students[index]);
 }
+console.log("-------------");
+
+for (let i = 0; i < students.length; i++) {
+  console.log(students[i]);
+}
