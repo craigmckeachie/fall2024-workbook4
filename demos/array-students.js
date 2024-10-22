@@ -9,5 +9,6 @@ for (let index = 0; index < 5; index = index + 1) {
 console.log("-------------");
 
 for (let i = 0; i < students.length; i++) {
-  console.log(students[i]);
+  let studentName = students[i];
+  console.log(studentName);
 }
