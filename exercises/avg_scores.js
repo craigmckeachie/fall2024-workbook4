@@ -14,7 +14,10 @@ for (const score of myScores) {
   console.log(score);
   sumOfAllScores = sumOfAllScores + score; //sumOfAllScores += score;  
 }
-console.log(sumOfAllScores);
+
+let averageScore = sumOfAllScores/ myScores.length;
+console.log(averageScore);
+
 
 // let list = [92, 98, 84, 76, 89, 99, 100];
 // for (let position = 0; position < list.length; position++) {
