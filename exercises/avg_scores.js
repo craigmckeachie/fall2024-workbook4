@@ -21,7 +21,7 @@ for (const item of list) {
 
 let cats = ["Garfield", "Tom", "Toma", "Mochi", "Felix", "Flex", "Sylvester", "P Kitty"];
 
-for (const cat of cats) {
+for (let cat of cats) {
   console.log(cat);
 }
 
