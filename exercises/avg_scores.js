@@ -1,22 +1,21 @@
 "use strict";
-//arrays
-//functions, calling functions, passing parameters, catch return value in variable
-
-//for loop
-// operators to the summing
-//
 
 let myScores = [92, 98, 84, 76, 89, 99, 100];
 // let yourScores = [82, 98, 94, 88, 92, 100, 100];
 
-let sumOfAllScores = 0;
-for (const score of myScores) {
-  console.log(score);
-  sumOfAllScores = sumOfAllScores + score; //sumOfAllScores += score;  
+function getAverage(myScores) {
+  let sumOfAllScores = 0;
+  for (const score of myScores) {
+    sumOfAllScores = sumOfAllScores + score; //sumOfAllScores += score;
+  }
+
+  let averageScore = sumOfAllScores / myScores.length;
+  console.log(averageScore);
+  return averageScore;
 }
 
-let averageScore = sumOfAllScores/ myScores.length;
-console.log(averageScore);
+getAverage(myScores)
+
 
 
 // let list = [92, 98, 84, 76, 89, 99, 100];
