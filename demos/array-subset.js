@@ -8,7 +8,7 @@ let menuItems = [
   { id: 5, item: "Coke", category: "Drink", price: 2.29 },
 ];
 
-let drinks = [];
+// let drinks = [];
 // drinks.push("Margharita");
 // drinks.push("Water")
 // drinks.push("Diet Coke")
@@ -16,9 +16,10 @@ let drinks = [];
 
 for (const menuItem of menuItems) {
   if (menuItem.category == "Drink") {
-    drinks.push(menuItem);
+    console.log(menuItem);
+    // drinks.push(menuItem);
   }
 }
 
-console.log(drinks);
+// console.log(drinks);
 
