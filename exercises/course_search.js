@@ -80,3 +80,8 @@ for (const course of courses) {
 
 console.log("Inexpensive course list: ",inexpensiveCourseTitles);
 
+let filmName = "Bobbie Boots";
+let result = filmName.indexOf("Bob");
+console.log(result);
+
+
