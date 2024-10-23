@@ -10,7 +10,7 @@ let products = [
 ];
 
 // Which candies costs less than $4.00?
-
+console.log("--------candies less than $4.00-----");
 //easy/quick solution
 for (const product of products) {
   if (product.price < 4) {
@@ -18,21 +18,39 @@ for (const product of products) {
   }
 }
 
+console.log("------------------------------------");
+
 //using a function, more reusable
-function getCheapCandies(candies,price) {
-  let cheapCandies = [];
+// function getCheapCandies(candies, price) {
+//   let cheapCandies = [];
 
-  for (const candy of candies) {
-    if (candy.price <= price) {
-      cheapCandies.push(candy);
-    }
+//   for (const candy of candies) {
+//     if (candy.price <= price) {
+//       cheapCandies.push(candy);
+//     }
+//   }
+
+//   return cheapCandies;
+// }
+
+// let cheapCandies = getCheapCandies(products, 3);
+// console.log(cheapCandies);
+
+// Which candies has "M&M" in its name?
+console.log("--------M&M candies-----");
+for (const product of products) {
+  if (product.product.includes("M&M")) {
+    console.log(product);
   }
-
-  return cheapCandies;
 }
+console.log("------------------------------------");
 
-let cheapCandies = getCheapCandies(products, 3);
-console.log(cheapCandies);
-
-// Which candies has "M&M" its name?
 // Do we carry "Swedish Fish"?
+console.log('--------"Swedish Fish"?-----');
+
+for (const product of products) {
+  if (product.product.includes("Swedish Fish")) {
+    console.log("Yes we carry Swedish Fish, would you like to try some?");
+  }
+}
+console.log("------------------------------------");
