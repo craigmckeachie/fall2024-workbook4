@@ -66,5 +66,4 @@ for (const member of academyMembers) {
 
 console.log('Academy Members have been in a film that starts with "A"');
 console.log(matchedMembers);
-
-
+//TODO: remove duplicate matchedMembers
