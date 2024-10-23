@@ -65,7 +65,18 @@ for (const course of courses) {
 
 // What are the titles of the courses that cost $50 or less? // What classes meet in "Classroom 1"?
 for (const course of courses) {
-    if (Number(course.Fee) <= 50) {
-      console.log(`Inexpensive course: ${course.Title}`);
-    }
+  if (Number(course.Fee) <= 50) {
+    console.log(`Inexpensive course: ${course.Title}`);
   }
+}
+
+let inexpensiveCourseTitles = [];
+
+for (const course of courses) {
+  if (Number(course.Fee) <= 50) {
+    inexpensiveCourseTitles.push(course);
+  }
+}
+
+console.log("Inexpensive course list: ",inexpensiveCourseTitles);
+
