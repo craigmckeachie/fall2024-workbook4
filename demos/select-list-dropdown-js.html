@@ -21,9 +21,11 @@
               <option value="">Select...</option>
             </select>
           </div>
-          <button onclick="showState()" type="button" class="btn btn-outline-secondary">Show State</button>
+          <button onclick="showDetails()" type="button" class="btn btn-outline-secondary">Show Details</button>
         </form>
       </div>
+
+      <div id="detailsDiv" class="card p-4 w-50 bg-body-tertiary mt-4"></div>
     </main>
     <script>
       "use strict";
@@ -83,6 +85,7 @@
 
       //get html elements into variables
       let statesSelect = document.getElementById("statesSelect");
+      let detailsDiv = document.getElementById("detailsDiv");
 
       for (const state of usStates) {
         // let option = document.createElement("option");
@@ -94,8 +97,20 @@
 
       // statesSelect.value = 16;
 
-      function showState() {
-        console.log(statesSelect.value);
+      function showDetails() {
+        let id = Number(statesSelect.value);
+        console.log(id);
+
+        let selectedState;
+        for (const state of usStates) {
+          if (state.id === id) {
+            selectedState = state;
+            break;
+          }
+        }
+
+        console.log(selectedState);
+        detailsDiv.innerText = `${selectedState.name} (${selectedState.abbreviation}) was selected. The capital is ${selectedState.capital}.`;
       }
     </script>
   </body>
