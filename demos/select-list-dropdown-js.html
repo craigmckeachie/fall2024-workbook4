@@ -15,10 +15,13 @@
     <main class="container mt-4">
       <div class="card p-4 bg-body-tertiary w-50">
         <form class="w-25">
-          <label for="statesSelect" class="form-label">States</label>
-          <select class="form-select" id="statesSelect">
-            <option value="">Select...</option>
-          </select>
+          <div class="mb-3">
+            <label for="statesSelect" class="form-label">States</label>
+            <select class="form-select" id="statesSelect">
+              <option value="">Select...</option>
+            </select>
+          </div>
+          <button onclick="showState()" type="button" class="btn btn-outline-secondary">Show State</button>
         </form>
       </div>
     </main>
@@ -87,6 +90,12 @@
         // option.innerText = state.name;
         let option = new Option(state.name, state.id);
         statesSelect.appendChild(option);
+      }
+
+      // statesSelect.value = 16;
+
+      function showState() {
+        console.log(statesSelect.value);
       }
     </script>
   </body>
