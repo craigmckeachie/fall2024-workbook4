@@ -81,13 +81,17 @@
       //get html elements into variables
       let statesSelect = document.getElementById("statesSelect");
 
-      for (const state of usStates) {
-        // let option = document.createElement("option");
-        // option.value = state.id;
-        // option.innerText = state.name;
-        let option = new Option(state.name, state.id);
-        statesSelect.appendChild(option);
+      function loadStatesSelect() {
+        for (const state of usStates) {
+          // let option = document.createElement("option");
+          // option.value = state.id;
+          // option.innerText = state.name;
+          let option = new Option(state.name, state.id);
+          statesSelect.appendChild(option);
+        }
       }
+
+      loadStatesSelect();
     </script>
   </body>
 </html>
