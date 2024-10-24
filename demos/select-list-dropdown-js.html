@@ -16,8 +16,8 @@
       <div class="card p-4 bg-body-tertiary w-50">
         <form class="w-25">
           <div class="mb-3">
-            <label for="statesSelect" class="form-label">States</label>
-            <select class="form-select" id="statesSelect">
+            <label for="statesDropdown" class="form-label">States</label>
+            <select class="form-select" id="statesDropdown">
               <option value="">Select...</option>
             </select>
           </div>
@@ -84,18 +84,19 @@
       ];
 
       //get html elements into variables
-      let statesSelect = document.getElementById("statesSelect");
+      let statesDropdown = document.getElementById("statesDropdown");
       let detailsDiv = document.getElementById("detailsDiv");
 
       for (const state of usStates) {
         // let option = document.createElement("option");
         // option.value = state.id;
         // option.innerText = state.name;
+        //OR
         let option = new Option(state.name, state.id);
-        statesSelect.appendChild(option);
+        statesDropdown.appendChild(option);
       }
 
-      // statesSelect.value = 16;
+      // statesDropdown.value = 16;
 
       function showDetails() {
         let id = Number(statesSelect.value);
