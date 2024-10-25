@@ -12,7 +12,7 @@
         <form class="w-25">
           <div class="mb-3">
             <label for="statesDropdown" class="form-label">States</label>
-            <select class="form-select" id="statesDropdown">
+            <select class="form-select" id="statesDropdown" onchange="showDetails()">
               <option value="">Select...</option>
             </select>
           </div>
@@ -94,6 +94,8 @@
       // statesDropdown.value = 16;
 
       function showDetails() {
+    
+
         let id = Number(statesDropdown.value);
         console.log(id);
 
