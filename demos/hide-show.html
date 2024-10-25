@@ -9,6 +9,7 @@
   <body>
     <main class="container mt-4">
       <button class="btn btn-secondary" onclick="showMe();">Show Me</button>
+      <button class="btn btn-outline-secondary" onclick="hideMe();">Hide Me</button>
       <div id="messageDiv" class="card bg-body-tertiary p-4 mt-4" style="display: none">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. In totam, similique fugit quis amet dolore maxime
         nesciunt provident autem nam perspiciatis numquam expedita, accusantium quo inventore voluptatum quibusdam
@@ -21,6 +22,12 @@
         function showMe() {
           messageDiv.style.display = "block";
         }
+
+        function hideMe() {
+          messageDiv.style.display = "none";
+        }
+
+        
       </script>
     </main>
   </body>
